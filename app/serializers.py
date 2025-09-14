@@ -45,6 +45,7 @@ class FilmeSerialaizers(serializers.ModelSerializer):
     class Meta:
         model = Filme
         fields = '__all__'
+        read_only_fields = ['id', 'year', 'rated', 'released', 'runtime_minutes', "genre", "director", "writer", "actors", "poster"]
 
 
 class ResenhaSerialaizers(serializers.ModelSerializer):
