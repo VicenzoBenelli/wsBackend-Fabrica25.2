@@ -66,5 +66,5 @@ Exemplo de payload:
 
 Tudo está rodando no **Render**:  
 
-- Backend: 👉 [https://wsbackend-fabrica25-2.onrender.com](https://wsbackend-fabrica25-2.onrender.com)  
+- Backend: 👉 [https://wsbackend-fabrica25-2.onrender.com](https://wsbackend-fabrica25-2.onrender.com/app/)  
 - Banco: PostgreSQL gerenciado pelo Render  
