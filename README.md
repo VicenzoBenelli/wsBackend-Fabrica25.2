@@ -18,35 +18,6 @@ O projeto já está **deployado no Render**, tanto o **backend** quanto o **Post
 - **Autenticação JWT** (login, refresh e verificação de tokens).  
 - **Gerenciamento de usuários customizados** (com possibilidade de associar resenhas).  
 
----
-
-## 🗂️ Modelos principais
-
-### Filme
-- title  
-- year  
-- rated  
-- released  
-- runtime_minutes  
-- genre  
-- director  
-- writer  
-- actors  
-- poster  
-
-### Resenha
-- nome  
-- nota  
-- filme_id  
-- user_id  
-- descricao  
-
-### CustomUser
-- Baseado em `AbstractUser`  
-- Pode ter várias resenhas associadas  
-
----
-
 ## 🔑 Autenticação  
 
 A API usa **JWT**:  
@@ -88,15 +59,6 @@ Exemplo de payload:
 ### Usuários
 - `GET /app/CustomUser/` → lista usuários  
 - `POST /app/CustomUser/` → cria usuário  
-
----
-
-## 🛠️ Stack usada
-
-- **Python 3 + Django Rest Framework**  
-- **PostgreSQL** (deploy no Render)  
-- **OMDb API** para buscar informações dos filmes  
-- **JWT Authentication**  
 
 ---
 
