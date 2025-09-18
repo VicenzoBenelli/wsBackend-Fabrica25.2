@@ -25,7 +25,12 @@ SECRET_KEY = 'django-insecure-(jlblt9lzo$ns&$=oznr((30$6a9#8l9xj3d6!+%@$&y_r)6k(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["wsbackend-fabrica25-2.onrender.com"]
+ALLOWED_HOSTS = [
+    "wsbackend-fabrica25-2.onrender.com",  
+    "127.0.0.1",  
+    "localhost"   
+]
+
 
 
 # Application definition
@@ -44,6 +49,7 @@ INSTALLED_APPS = [
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
+        'rest_framework.authentication.SessionAuthentication', 
     ),
 }
 
